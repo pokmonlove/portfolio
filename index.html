@@ -15,21 +15,25 @@
     
     <!--web fonts-->
     <link rel="stylesheet" href="css/style.css">
+
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/cc7ea5ce8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div><img src="./images/profile.png" alt="logo">
-        <h1><a href="#">남희</a></h1></div>
+    <!--BEM-->
+    <header class="header">
+        <div class="header__logo">
+            <img class ="header__logo__img" src="./images/mung-crop.png" alt="logo">
+            <h1 class="header__logo__title"><a href="#">남희</a></h1>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#home">홈</a></li>
-                <li><a href="#about">류지</a></li>
-                <li><a href="#skills">기술</a></li>
-                <li><a href="#work">프토플리오</a></li>
-                <li><a href="#license">자격증</a></li>
-                <li><a href="#contact"></a></li>
+            <ul class="header__nav">
+                <li><a href="#home" class="header__menu__item active">홈</a></li>
+                <li><a href="#about" class="header__menu__item">남희</a></li>
+                <li><a href="#skills" class="header__menu__item">기술</a></li>
+                <li><a href="#work" class="header__menu__item">프토플리오</a></li>
+                <li><a href="#license" class="header__menu__item">자격증</a></li>
+                <li><a href="#contact" class="header__menu__item">연락</a></li>
             </ul>
             <ul>
                 <li>
@@ -59,14 +63,12 @@
             <h2>안녕하세요 </h2>
             <p>세상에서 가장 뛰어난 대한민국의 AI 개발자입니다</p>
             <a href="#contact">연락처</a>
-
-
         </section>
+
         <!--about-->
-        <section id="about">
-            <h2>남희</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nam numquam reprehenderit alias tempora maxime blanditiis? Blanditiis, eum ipsa quos dignissimos modi a veritatis laboriosam! Fugit incidunt fuga aliquid fugiat?
-            </p>
+        <section id="about" class="section max-container">
+            <h2 class="title">김남희</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nam numquam reprehenderit alias tempora maxime blanditiis? Blanditiis, eum ipsa quos dignissimos modi a veritatis laboriosam! Fugit incidunt fuga aliquid fugiat?</p>
             <ul>
                 <li>
                     <i class="fa-brands fa-html5"></i>
@@ -85,10 +87,12 @@
                 </li>
             </ul>
         </section>
-        <!--skills-->
-        <section id="skills">
-            <h2>기술</h2>
-            <p>언어 및 도구</p>
+
+        <!--skills -->
+        <section id="skills" class="section">
+            <div class="max-container">
+            <h2 class="title">기술</h2>
+            <p class="description">언어 및 도구</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cumque ut, quo minima neque quae ratione cupiditate iusto delectus voluptate est, totam quisquam quibusdam repellendus, fugit sapiente consequatur! Voluptates, exercitationem?</p>
             <div>
                 <section>
@@ -112,7 +116,7 @@
                                 <div><div style="width: 98%"><div></div>
                             </li>
                         </ul>
-                    
+                    </div>
                 </section>
                 <section>
                     <h3>도구</h3>
@@ -122,7 +126,6 @@
                         <li>Jupyter notebook</li>
                         <li>Colab</li>
                         <li>X code</li>
-
                     </ul>
                 </section>
                 <section>
@@ -134,10 +137,12 @@
                 </section>
             </div>
         </section>
+
         <!--work-->
-        <section id="work">
-            <h2>포트폴리오</h2>
-            <p>Projects</p>
+        <section id="work" class="section">
+            <div class="max-container">
+            <h2 class="title">포트폴리오</h2>
+            <p class="description">Projects</p>
             <ul><li><button>All<span>10</span></button></li>
                 <li><button>Front-end<span>3</span></button></li>
                 <li><button>Mobile<span>5</span></button></li>
@@ -154,12 +159,32 @@
                         </div>
                     </a>
                 </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./images/project.PNG" alt="Projects">
+                        <div>
+                            <h3>project1</h3>
+                            <p>클론 코딩 사이트</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./images/project.PNG" alt="Projects">
+                        <div>
+                            <h3>project1</h3>
+                            <p>클론 코딩 사이트</p>
+                        </div>
+                    </a>
+                </li>
             </ul>
+            </div>
         </section>
+
         <!--license-->
-        <section id="license">
-            <h2>자격증</h2>
-            <p>국가 기술 자격증</p>
+        <section id="license" class="section max-container">
+            <h2 class="title">자격증</h2>
+            <p class="description">국가 기술 자격증</p>
             <ul>
                 <li><img src="./images/sqld2.jpg" alt="sqld">
                 <div><p>
@@ -188,13 +213,15 @@
             <i class="fa-solid fa-arrow-up"></i></i>
         </a></aside>
         <!--footer-->
-        <footer id="contact">
-            <h2>연락주세요</h2>
-            <p>kelly94579457@gmail.com</p>
+        <footer id="contact" class="section">
+            <div class="max-container">
+            <h2 class="title">연락주세요</h2>
+            <p class="description">kelly94579457@gmail.com</p>
             <ul>
                 <li><a href="https://github.com/pokmonlove" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
             </ul>
             <p>ⓒNamhee - All rights reserved</p>
+        </div>
         </footer>
     </main>
 </body>
