@@ -270,7 +270,7 @@ margin: auto;}
     filter: brightness(150%); /*밝기*/
 }
 
-/*work*/
+/*work*/ /*work*/
 #work{
     background-color: var(--color-primary);
     color:var(--color-text);
