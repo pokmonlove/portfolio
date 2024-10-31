@@ -260,12 +260,12 @@ margin: auto;}
     background-color: var(--color-accent);
 }
 
-.section__tools {
+.skills__tools {
     padding: 1rem;
 }
 
 .skills__etc {
-    padding: 1 rem;
+    padding: 1rem;
     background-color: var(--color-primary);
     filter: brightness(150%); /*밝기*/
 }
