@@ -443,22 +443,21 @@ margin: auto;}
 
 @media screen and (max-width: 768px) {
     .header {
+        width: 100%;
         display:flex;
         font-size: 40px;
         flex-wrap: nowrap;
     }
     .header__logo__title{
         font-size: 20px;
-    }
+    } 
     .header__nav {
         font-size: 12px;
     }
     
-    
     .header__menu__item {
         padding: 3px 5px;
     }
-
 }
 
 
