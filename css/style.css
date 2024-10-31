@@ -443,14 +443,13 @@ margin: auto;}
 
 @media screen and (max-width: 768px) {
     .header {
-        display:inline;
+        display:flex;
         font-size: 40px;
     }
     .header__logo__title{
         font-size: 20px;
     }
     .header__nav {
-        transform: translate(450px, -24px);
         font-size: 12px;
     }
     
