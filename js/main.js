@@ -15,7 +15,7 @@ document.addEventListener('scroll', () => {
 
 // home  섹션을 아래로 스크롤 시 투명하게 처리
 const home = document.querySelector('.home__container')
-const homeHeight = home. offsetHeight
+const homeHeight = home.offsetHeight
 document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight
 })
