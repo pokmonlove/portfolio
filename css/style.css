@@ -42,7 +42,7 @@ border: 0;
 outline: 0;} 
 
 button:focus {outline: 1px solid var(--color-accent);}
-.section { padding: 4rem; text-align: center;} /*pc: 16*4*/
+.section { padding: 4rem; text-align: center; } /*pc: 16*4*/
 .max-container {max-width: var(--size-max-width);
 margin: auto;}
 
@@ -119,12 +119,20 @@ margin: auto;}
     border-radius: 4px;
 }
 
+
+.header__menu__item.active {
+    color: var(--color-accent); /* 활성화된 메뉴 항목 색상 */
+    font-weight: bold; /* 활성화된 메뉴 항목 굵게 */
+}
+
+
 /*Home*/
 #home {
     background-color: var(--color-primary);
     color: var(--color-text);
     padding: 7rem 5rem 1rem;
     text-align: center;
+    height: 100vh;
 }
 
 .home__avatar {
@@ -165,6 +173,7 @@ margin: auto;}
 }
 
 /*about*/
+
 
 .majors {
     display: flex;
@@ -227,6 +236,7 @@ margin: auto;}
 #skills {
     background-color: var(--color-primary-variant);
     color: var(--color-text);
+    height: 100vh;
 }
 
 .skills {
